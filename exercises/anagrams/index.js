@@ -34,8 +34,8 @@ function anagrams(stringA, stringB) {
     }
   }
   for(let letter of stringB) {
-    if(/[a-z]/.test(letter)) {
-      let char = letter.toLowerCase()
+    let char = letter.toLowerCase()
+    if(/[a-z]/.test(char)) {
       frequencyCounter2[char] = (frequencyCounter2[char] || 0) + 1
     }
   }
