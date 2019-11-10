@@ -6,7 +6,6 @@
 
 
 function countUniqueValues(arr) {
-  let counter = 0
   let pointA = 0
   let pointB = 1
   while (pointB < arr.length) {
@@ -31,9 +30,9 @@ function countUniqueValues(arr) {
 // Using Set method from ES6 based on same algorithm
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 function countUniqueValue(arr) {
-  let uniqueArray = Array.from(new Set(arr))
-  if (uniqueArray.length > 0) {
-    return uniqueArray.length
+  let uniqueSet = Array.from(new Set(arr))
+  if (uniqueSet.length > 0) {
+    return uniqueSet.length
   } else {
     return 0
   }
