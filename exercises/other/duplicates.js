@@ -35,4 +35,7 @@ function areThereDuplicates() {
   return false
 }
 
-// multiple pointers
+// one liner....
+function areThereDuplicates() {
+  return new Set(arguments).size !== arguments.length
+}
