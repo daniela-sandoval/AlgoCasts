@@ -22,13 +22,11 @@ function areThereDuplicates() {
 // multiple pointers
 function areThereDuplicates() {
   let sortedArr = Array.from(arguments).sort()
-  let i = 0
   let j = 1
-  while (j < sortedArr.length) {
-    if(sortedArr[i] === sortedArr[j]) {
+  for (let arg in sortedArr) {
+    if(sortedArr[arg] === sortedArr[j]) {
       return true
     } else {
-      i++
       j++
     }
   }
