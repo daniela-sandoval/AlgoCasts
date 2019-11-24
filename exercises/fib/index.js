@@ -8,6 +8,24 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+// takes advantage of the first two values in the sequence
+function fib(n){
+  if (n <= 2) return n;
+  return fib(n-1) + fib(n-2);
+}
+
+
+// function fib(n) {
+//   arr = [0, 1]
+//   function helper(input) {
+//     if (input.length  === n + 1) return input
+//     if (input.length === 1) {
+//       input.push(1)
+//     }
+//     debugger
+//     helper(input.push( input[input.length - 1] + input[input.length - 2] ))
+//   }
+//   return helper(arr)[n]
+// }
 
 module.exports = fib;
