@@ -13,7 +13,7 @@
 
 // Helper Recursion
 function collectOddNumbers(input) {
-  let oddNums = [];
+  let result = [];
 
   function helper(helperInput) {
     if(helperInput.length === 0) {
@@ -26,7 +26,7 @@ function collectOddNumbers(input) {
   }
 
   helper(input)
-  return oddNums
+  return result
 }
 
 // Pure Recursion
