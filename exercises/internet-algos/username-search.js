@@ -14,3 +14,15 @@ function username(arr, val) {
     return `${val} is already been taken, try again!`
   }
 }
+
+// function findUsername(usernames, val) {
+//   let left = 0
+//   let right = usernames.length - 1
+//   while (left <= right) {
+//     let middle = Math.floor((left + right) / 2)
+//     let letter = sortedArr[middle][0]
+//     if (letter < val[0]) {
+//
+//     }
+//   }
+// }
